@@ -4,7 +4,7 @@
 
     <li class="media mb-3">
       <img class="mr-2 rounded" src="
-<%= gravatar_url(micropost.user, { size: 50 }) %>
+<%= gravatar_url(micropost.user, {size: 50 }) %>
 " alt="">
       <div class="media-body">
         <div>
@@ -28,6 +28,7 @@
 
           
 <% end %>
+            <%= render 'favorites/favorite_button', micropost: micropost %>
 
         </div>
       </div>
